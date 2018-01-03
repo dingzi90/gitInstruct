@@ -1,0 +1,33 @@
+1.初始化代码仓库
+$ git init
+#下载一个项目和它的整个代码历史
+$ git clone [url]
+2.# 添加指定文件到暂存区
+$ git add [file1] [file2] ...
+
+# 添加指定目录到暂存区，包括子目录
+$ git add [dir]
+
+# 添加当前目录的所有文件到暂存区
+$ git add .
+
+3.# 提交暂存区到仓库区
+$ git commit -m [message]
+
+# 列出所有本地分支
+$ git branch
+
+# 显示有变更的文件
+$ git status
+
+# 显示所有远程仓库
+$ git remote -v
+
+# 增加一个新的远程仓库，并命名
+$ git remote add [shortname] [url]
+
+# 取回远程仓库的变化，并与本地分支合并
+$ git pull [remote] [branch]
+
+在新版 Git 中可以用 git remote rename 命令修改某个远程仓库在本地的简称，比如想把 pb 改成paul，可以这么运行：
+$ git remote rename pb paul
